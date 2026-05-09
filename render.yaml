@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: kompyordam-server
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: TG_TOKEN
+        value: 6575215253:AAEs92rEfReGD8E7bHcXKQEFQO3Bb0avfn8
+      - key: TG_CHAT
+        value: "5816903954"
+      - key: GEMINI_KEY
+        value: AIzaSyAZjzUwrbspHInJYiUiIluUWLpsWOjgYh8
+      - key: PORT
+        value: "3000"
